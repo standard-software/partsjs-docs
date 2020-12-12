@@ -1,0 +1,23 @@
+{
+  "name": "@standard-software/parts.js-Documents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear": "node -e \"require('fs-extra').removeSync('./.docz/.cache/')\"",
+    "dev":   "npm run clear && docz dev",
+    "build": "npm run clear && docz build",
+    "serve": "npm run clear && npm run build && docz serve .docz/dist",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "Satoshi Yamamoto <standard.software.net@gmail.com> (https://www.facebook.com/stndardsoftware/)",
+  "license": "MIT",
+  "homepage": "https://standard-software.github.io/partsjs-docs/",
+  "dependencies": {
+    "docz": "^2.3.1",
+    "fs-extra": "^9.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
