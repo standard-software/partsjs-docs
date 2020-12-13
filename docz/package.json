@@ -1,10 +1,12 @@
 {
-  "name": "@standard-software/parts.js-Documents",
+  "name": "@standard-software/partsjs-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clear":    "node -e \"require('fs-extra').removeSync('./.docz/.cache/')\"",
+    "_clear:cache":    "node -e \"require('fs-extra').removeSync('./.docz/.cache/')\"",
+    "_clear:public":    "node -e \"require('fs-extra').removeSync('./.docz/public/')\"",
+    "clear":    "npm run _clear:cache && npm run _clear:public",
     "dev":      "npm run clear && docz dev",
     "build":    "npm run clear && docz build",
     "serve":    "npm run clear && npm run build && docz serve .docz/dist",
