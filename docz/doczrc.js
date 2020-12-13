@@ -5,32 +5,37 @@ export default {
     'Parts.js Documents',
     'Introduction',
     {
-      name: 'common namespace',
+      name: 'Functions',
       menu: [
-        'functionA',
-        'functionB',
-      ],
-    },
-    {
-      name: 'platform namespace',
-      menu: [
-        'functionC',
-        'functionD',
-      ],
-    },
-    {
-      name: 'type namespace',
-      menu: [
-        'functionE',
-        'functionF',
-      ],
-    },
-    {
-      name: 'test namespace',
-      menu: [
-        'functionG',
-        'functionH',
-      ],
+        {
+          name: 'common namespace',
+          menu: [
+            'functionA',
+            'functionB',
+          ],
+        },
+        {
+          name: 'platform namespace',
+          menu: [
+            'functionC',
+            'functionD',
+          ],
+        },
+        {
+          name: 'type namespace',
+          menu: [
+            'functionE',
+            'functionF',
+          ],
+        },
+        {
+          name: 'test namespace',
+          menu: [
+            'functionG',
+            'functionH',
+          ],
+        }
+      ]
     }
   ],
   files: '**/source/**/*.{md,markdown,mdx}'
